@@ -1,0 +1,193 @@
+# -*- coding: utf-8 -*-
+"""Điểm SWP chấm tay theo skills/swp-scoring/SKILL.md (lần 1 – 2026-11-17).
+
+Mỗi issue lá: (S, lý do S, C nền, mục cộng, lý do C)
+Mục cộng (mỗi chữ = +1, tổng C tối đa 5):
+  T = chạm tiền / làm tròn · B = chạm 営業日 · D = ghi đồng thời / offline đồng bộ · Q = spec còn câu hỏi mở (→ confidence low)
+
+Cách hiểu tiêu chí khi chấm (ghi vào báo cáo; người review sửa ở đây nếu không đồng ý):
+  R1. "Nhiều bảng" (S = 5) = đổi cấu trúc / policy của từ 4 bảng trở lên; 2–3 bảng cùng mẫu thay đổi kèm chuyển dữ liệu → S = 3.
+  R2. Giả định P-08…P-16 (PREMISE.md) đã có câu trả lời tạm → KHÔNG cộng Q. Chỉ cộng Q cho Q-xx, câu hỏi mở trong ADR,
+      chỗ hở chưa có giả định (GAP-01/02/03/07/09/12/13/14/15/18/19/20/21) và dữ liệu khách chưa có.
+  R3. Issue làm rõ / thiết kế: S theo phạm vi câu hỏi (1 câu hỏi = 1; nhiều câu hỏi / nhiều tài liệu = 2; thiết kế 1 màn hình = 3);
+      C nền 2 (chuẩn bị + ghi quyết định) hoặc 3 nếu câu trả lời đổi luật; luôn +Q.
+  R4. Issue test: S theo số lớp được test (API / database = 2; E2E qua giao diện = 3; mọi bảng / nhiều màn hình = 5); C theo số luật được test.
+  R5. Hàm database nghiệp vụ chạy 1 transaction có khóa dòng → C nền 4.
+  R6. Spike: C nền 3 (so sánh 2–3 phương án).
+"""
+
+SCORES = {
+    # ---------------- E01 ----------------
+    "E01-01": (2, "Chỉ lớp hạ tầng: repo + pipeline CI cho bộ test sẵn có (ADR-001).", 3, "", "CI phải chạy unit + E2E cần database test và không lộ khóa – 3 điều kiện (ADR-001, ADR-002)."),
+    "E01-02": (2, "Chỉ quy trình database: thư mục migration + câu kiểm cấu trúc (diff.md).", 3, "", "3 quy tắc: đánh số, người dùng tự chạy, kiểm lại cấu trúc sau khi chạy (diff.md đầu file)."),
+    "E01-03": (3, "2 lớp hạ tầng: Supabase + Vercel cho 3 môi trường (ADR-001).", 2, "", "1 luật chính: vùng Tokyo, chỉ khóa publishable (ADR-001, ADR-002)."),
+    "E01-04": (2, "Chỉ 1 module lớp API (logger + định dạng lỗi); route áp dụng dần (DD README).", 2, "", "Định dạng log cố định + không ghi bí mật (DD README)."),
+    "E01-05": (2, "Chỉ từ điển giao diện ja.ts (ADR-011).", 2, "", "Từ mới phải ghép theo quy tắc GLOSSARY mục 10 (ADR-011)."),
+    "E01-06": (3, "GLOSSARY + toàn bộ chữ ja.ts, 3 màn hình dùng 承認 (SC-03, SC-12, SC-18).", 2, "Q", "Rà chữ + chốt cách gọi; GAP-13 chưa có câu trả lời, M12 chưa có BrSE review."),
+    "E01-07": (1, "Vài câu xóa dữ liệu test, không chuyển dữ liệu (G-12, G-28, G-29).", 2, "", "1 luật: không xóa nhầm dữ liệu thật trước khi đặt unique D-27."),
+    # ---------------- E02 ----------------
+    "E02-01": (2, "Chỉ database: thu hồi quyền + trigger trên audit_logs (D-34, D-40).", 3, "", "3 lớp chặn (revoke, trigger dòng, trigger truncate) và app vẫn phải ghi được (D-34, D-40)."),
+    "E02-02-DB1": (2, "Chỉ database: 1 hàm + 2 cột audit_logs (D-28, P-14).", 4, "", "Ghi trong cùng transaction, actor_roles theo vai trò lúc làm, market_id null có điều kiện (D-33, P-14)."),
+    "E02-02-DB2": (5, "Gắn trigger lưu vết cho ≥ 4 bảng (participants, permits, lots, inspections, rule_versions, user_roles…) – P-16.", 2, "", "1 luật: mỗi ghi thêm 1 dòng qua hàm chung đã có ở DB1."),
+    "E02-02-T": (2, "Test lớp database / API (CS-15).", 3, "", "Rollback khi lỗi lưu vết, actor_roles đúng, không ghi từ API (CS-15, G-11, D-28)."),
+    "E02-03-DB": (2, "Chỉ database: 1 view che dữ liệu (D-37).", 3, "", "Che theo bảng + theo vai trò, lưu vết auth xem đầy đủ (P-07, CS-24)."),
+    "E02-03-API": (2, "Chỉ 1 API (API-43).", 3, "", "Lọc nhiều điều kiện + phân trang + chọn nguồn theo vai trò (G-31, CS-24)."),
+    "E02-03-UI": (3, "1 màn hình ít trường (SC-20: bộ lọc + bảng).", 2, "", "Hiện **** theo cờ che, phân trang (CS-24)."),
+    "E02-03-T": (3, "E2E qua giao diện SC-20 với 2 vai trò.", 2, "", "So 2 vai trò: che / không che (P-07)."),
+    "E02-04": (1, "1 câu hỏi (ADR-007).", 2, "Q", "Câu hỏi mở của ADR-007 chưa có trả lời."),
+    # ---------------- E03 ----------------
+    "E03-01": (2, "Chỉ database: 1 bảng nhỏ + 1 dòng (D-01).", 1, "", "Lưu thẳng, không luật."),
+    "E03-02-DB1": (3, "Chuyển dữ liệu cũ sang cấu trúc mới ở 3 bảng (D-09, D-16).", 3, "", "Điền chợ mặc định, not null, đổi unique theo chợ (D-09, D-16)."),
+    "E03-02-DB2": (3, "Chuyển dữ liệu cũ ở 3 bảng, đổi PK day_closes (D-09, D-25).", 3, "", "Đổi khóa chính, null có điều kiện cho auth (D-25, P-14)."),
+    "E03-02-API": (5, "Thay đổi dùng chung mọi truy vấn của app (D-09).", 2, "", "1 luật: mọi truy vấn lọc theo chợ của người dùng (P-01)."),
+    "E03-02-T": (3, "Chạy lại toàn bộ E2E T01–T17.", 2, "", "Kịch bản có sẵn, chỉ sửa dữ liệu mẫu theo chợ."),
+    "E03-03-DB": (2, "Chỉ database: hàm + hàm tương thích + chỉ mục (D-29).", 4, "B", "Múi giờ, chọn phiên bản theo ngày lịch, tương thích hàm cũ, lỗi BD001 / BD002 (DD-02)."),
+    "E03-03-T": (2, "Test lớp database (T15, DD-02).", 3, "B", "01:30 / 02:00 / đổi mốc / thiếu phiên bản (DD-02, P-11)."),
+    "E03-04": (3, "API-04 + header H-2 / H-3 (2 lớp).", 2, "B", "Hiện 営業日 và 締め theo chợ (CS-05, CS-06)."),
+    "E03-05": (1, "1 câu hỏi: lịch 休市日 (GAP-09).", 3, "BQ", "Câu trả lời đổi luật hạn L1, L8 và thời điểm đổi mốc (ADR-004); chưa có trả lời."),
+    # ---------------- E04 ----------------
+    "E04-01-DB1": (2, "Chỉ database: 2 bảng + check + trigger (D-02, D-03, D-35).", 4, "TB", "Người soạn ≠ duyệt, miền 料率 / 係数 (P-10), grace_days = 0, khóa phiên bản đã duyệt (ADR-008)."),
+    "E04-01-DB2": (3, "Chuyển dữ liệu prototype thành phiên bản v1 (D-03, D-04).", 3, "T", "Ngoại lệ ngày quá khứ chỉ cho v1, 2 người khác nhau, giá trị 料率 đúng (P-12)."),
+    "E04-01-T": (2, "Test lớp database (D-35).", 3, "T", "Sửa phiên bản đã duyệt, tự duyệt, grace_days ≠ 0 (CS-13, P-02)."),
+    "E04-02": (2, "Chỉ 1 API (API-33).", 2, "B", "1 luật: phiên bản approved có effective_from lớn nhất ≤ ngày (ADR-008)."),
+    "E04-03-DB": (2, "Chỉ database: hàm chuyển trạng thái (ADR-008).", 4, "B", "Chuyển trạng thái, soạn ≠ duyệt, effective_from > 営業日, lưu vết (ADR-008, ADR-004)."),
+    "E04-03-API": (3, "4 route mỏng cùng tài nguyên (API-34…37).", 2, "", "Chỉ gọi rpc và đổi lỗi M_126."),
+    "E04-03-T": (2, "Test lớp API / database (CS-13).", 3, "", "Soạn → duyệt, tự duyệt bị chặn 2 lớp, rollback = phiên bản mới (ADR-008)."),
+    "E04-04": (3, "Thiết kế 1 màn hình đầy đủ (SC-18).", 3, "Q", "Luồng soạn / duyệt / lịch sử; Q18 và GAP-09 (đổi mốc khi chợ nghỉ) chưa có trả lời."),
+    "E04-05-UI1": (3, "1 màn hình ít trường: danh sách + lịch sử (SC-18).", 2, "", "Hiện trạng thái phiên bản, lọc."),
+    "E04-05-UI2": (3, "Các hộp soạn / duyệt có ~7 trường quy tắc (SC-18).", 3, "B", "Khóa nút theo trạng thái, M_126, ngày hiệu lực > 営業日 (ADR-008)."),
+    # ---------------- E05 ----------------
+    "E05-01-DB": (3, "Bảng mới + chuyển dữ liệu profiles.role (D-05).", 4, "", "Trigger guard: admin không kiêm, không tự gán, revoked_at (D-36, G-24)."),
+    "E05-01-T": (2, "Test lớp database (D-36).", 3, "", "M_116, tự gán, thu hồi vai trò (D-36, G-24)."),
+    "E05-02-DB1": (2, "Chỉ database: 2 hàm nhỏ (D-30, P-15).", 4, "", "Vai trò cha / con, revoked_at, theo chợ, chợ qua bảng cha (ADR-003, P-15)."),
+    "E05-02-DB2": (5, "Viết lại policy ≥ 4 bảng nhóm tài khoản / quy tắc / lưu vết – thay đổi phân quyền dùng chung (D-30).", 2, "", "1 mẫu policy / bảng dùng hàm DB1."),
+    "E05-02-DB3": (5, "Viết lại policy ≥ 4 bảng nghiệp vụ – thay đổi phân quyền dùng chung (D-30, D-37).", 2, "", "1 mẫu policy / bảng: has_role nghiệp vụ, không có admin (D-37)."),
+    "E05-02-T": (2, "Test gọi thẳng database + API (T11, T12, T17).", 3, "", "3 kịch bản quyền + admin đọc rỗng + hiệu năng P-15."),
+    "E05-03": (5, "Thay đổi dùng chung phân quyền mọi API + khung menu (CS-02…04).", 2, "", "1 luật: hợp các quyền đang có."),
+    "E05-04": (3, "Database (cột) + proxy (2 lớp) (D-11).", 3, "", "Khóa giữa phiên → đăng xuất, M_99, không tự khóa (CS-21)."),
+    "E05-05-API": (2, "Chỉ 1 API (API-02).", 4, "Q", "locked, không quyền, rate limit, ghi log thành công / thất bại (DD-01); GAP-14 chưa có phương án."),
+    "E05-05-UI": (2, "Chỉ khu vực form SC-01.", 3, "", "5 thông báo lỗi khác nhau (M_29, M_81, M_82, M_99, M_77)."),
+    "E05-06-API": (3, "3 API + bỏ API-39 (SC-21).", 4, "", "G-24 không tự đổi, M_116 không kiêm, lý do bắt buộc, không tự khóa (D-36, D-11)."),
+    "E05-06-UI": (4, "1 màn hình > 8 mục, 2 hộp thoại (SC-21).", 3, "", "Khóa dòng của mình, chọn nhiều quyền, lý do bắt buộc (G-24)."),
+    "E05-06-T": (3, "E2E qua SC-21.", 3, "", "M_44, M_116, M_70, M_75, T16."),
+    "E05-07": (3, "API-42 + hộp mời (2 lớp).", 2, "Q", "Gửi mời; cách gọi Auth chưa có phương án (GAP-15)."),
+    "E05-08": (1, "Bỏ 1 cột (D-10).", 2, "", "Chỉ bỏ khi không còn chỗ dùng."),
+    "E05-09": (3, "2 chỗ: lưu vết đăng nhập + mời người dùng, chạm Auth và database (D-38, API-42).", 3, "Q", "Spike so 2–3 phương án; GAP-14, GAP-15 chưa có trả lời."),
+    # ---------------- E06 ----------------
+    "E06-01-DB": (3, "Chuyển dữ liệu giấy cũ sang trạng thái mới (D-13).", 4, "", "Check theo kind, valid_* theo trạng thái, cột quyết định (D-13…D-15)."),
+    "E06-01-T": (2, "Test lớp database (D-13, D-15).", 3, "", "Sai kind, valid_from > valid_to, T06."),
+    "E06-02": (2, "Chỉ database: 1 bảng (D-06).", 2, "", "Ghi 1 dòng mỗi lần chuyển trạng thái."),
+    "E06-03": (2, "Chỉ database: 1 hàm dùng chung (L1).", 4, "B", "Loại giấy ↔ loại người, trạng thái, hạn, chưa hiệu lực – 4 lỗi M_31 / 32 / 47 / 48 (CS-07)."),
+    "E06-04-DB": (2, "Chỉ database: hàm chuyển trạng thái (ADR-009).", 4, "BQ", "Chuyển hợp lệ theo kind, 決定日 ≤ 営業日, chống quyết định trùng; câu hỏi mở ADR-009 (thu hồi, 承認)."),
+    "E06-04-API": (3, "3 API (API-08, 09, 11).", 3, "Q", "L3 (M_64 / 65), M_122, M_124; câu hỏi mở ADR-009."),
+    "E06-04-T": (2, "Test lớp API (SC-03, L3).", 3, "Q", "2 luồng trạng thái + lỗi; kết quả có thể đổi theo ADR-009."),
+    "E06-05-UI1": (4, "Màn hình > 8 mục: 2 tab, sơ đồ luồng, thẻ, bảng lịch sử (SC-03).", 2, "Q", "Hiện theo trạng thái / loại; ADR-009 còn hỏi 承認 có hiện như 許可."),
+    "E06-05-UI2": (2, "Chỉ khu vực hộp thoại D (SC-03).", 3, "BQ", "不許可 bắt buộc lý do, ẩn 有効期間, 決定日 ≤ 営業日; câu hỏi mở ADR-009."),
+    "E06-06": (3, "Database + API + chuyển lý do từ audit_logs (D-12).", 2, "", "Lý do bắt buộc khi suspended."),
+    "E06-07": (2, "Chỉ khu vực tô màu SC-02.", 2, "B", "期限切れ / 期限間近 30 ngày theo 営業日 (CS-07)."),
+    "E06-08": (4, "Bảng + Storage + upload trên SC-03 (3 lớp) (D-08).", 3, "", "Quyền theo bảng chủ, giới hạn file, chỉ thêm (M5)."),
+    "E06-09": (2, "3 câu hỏi, ADR-009 + SC-03.", 3, "Q", "Câu trả lời có thể thêm trạng thái mới; chưa có mã Q."),
+    # ---------------- E07 ----------------
+    "E07-01": (3, "1 màn hình ít trường (SC-05).", 2, "", "Bố cục tablet + kiểm nhập có sẵn."),
+    "E07-02": (2, "Chỉ 1 API (API-14).", 2, "", "残数量 > 0 gồm lô 前の営業日 (G-03)."),
+    "E07-03": (3, "Wireframe + 1 màn hình ít trường (SC-07).", 2, "", "Nhập 目利き có sẵn ở prototype."),
+    "E07-04": (2, "Chỉ khu vực lọc SC-06.", 1, "", "Hiển thị theo chợ."),
+    # ---------------- E08 ----------------
+    "E08-01": (3, "Chuyển dữ liệu từ audit_logs sang cột (D-19, D-21).", 3, "", "Check theo kind, unit_price > 0 sau khi kiểm dữ liệu, cancel_* theo trạng thái (D-19…D-21)."),
+    "E08-02-DB": (2, "Chỉ database: hàm confirm_trade (D-33).", 4, "TBD", "5 luật theo thứ tự + 1 transaction (DD-03); chạm 金額, 営業日, khóa lô (ADR-005)."),
+    "E08-02-API": (2, "Chỉ 1 API (API-15).", 3, "", "Đổi P0001 thành M_35 / M_31 / M_33 / M_51 theo mã."),
+    "E08-02-T": (2, "Test lớp API / database (T03–T05).", 4, "D", "5 luật + tranh chấp 2 người + rollback (CS-10)."),
+    "E08-03-DB": (2, "Chỉ database: hàm cancel_trade (D-33).", 4, "B", "L6, G-02, G-07, transaction; 締め theo 営業日."),
+    "E08-03-API": (2, "Chỉ 1 API (API-16).", 2, "", "Gọi rpc, đổi lỗi."),
+    "E08-03-T": (2, "Test lớp API (T09).", 3, "", "T09, G-02, G-07."),
+    "E08-04": (3, "2 API (API-17, API-18).", 2, "B", "Lọc theo 営業日, cảnh báo giấy tại 営業日 (G-15)."),
+    "E08-05": (2, "Chỉ khu vực hộp xác nhận + banner (SC-08).", 2, "", "Khóa form khi 締め済み (CS-06, W-05)."),
+    "E08-06": (3, "API + giao diện đọc / ghi cột mới (SC-10, D-19).", 2, "", "確認者 bắt buộc khi auction."),
+    "E08-07": (2, "Chỉ khu vực bảng SC-09.", 1, "", "Hiển thị cột mới."),
+    # ---------------- E09 ----------------
+    "E09-01": (3, "Chuyển dữ liệu reject_reason từ audit_logs (D-22).", 3, "", "Bắt buộc khi rejected, đổi tên cột + check, unique một phần (D-22…D-24)."),
+    "E09-02-DB": (2, "Chỉ database: 2 hàm (D-32).", 4, "TD", "L7, G-17, G-08, L4, 2 dòng lưu vết; sửa 単価 / 金額, khóa phiếu (DD-04)."),
+    "E09-02-API": (2, "2 route mỏng (API-23, 24).", 2, "", "Gọi rpc, đổi lỗi."),
+    "E09-02-T": (2, "Test lớp API / database (T10, T11).", 4, "D", "L7 kiêm 2 quyền, G-17, G-08, L4 khi duyệt, M_56 khi 2 người xử lý."),
+    "E09-03": (3, "API-25 + giao diện SC-12 (2 lớp).", 3, "", "自分の依頼, khóa nút L7, cảnh báo CSV M_110."),
+    "E09-04": (2, "Chỉ khu vực form SC-11.", 2, "", "G-07, G-08 đã có ở prototype."),
+    # ---------------- E10 ----------------
+    "E10-01": (2, "Chỉ database: 1 trigger (D-39).", 4, "D", "Khóa dòng giao dịch, Σ giao ≤ đã mua (CS-11)."),
+    "E10-02-DB": (2, "Chỉ database: hàm ghi 引渡し (D-33).", 4, "B", "L1 tại ngày giao, L5, không kiểm 締め (P-06), lưu vết."),
+    "E10-02-API": (2, "Chỉ 1 API (API-19).", 2, "", "Gọi rpc, đổi lỗi."),
+    "E10-03": (3, "API-20 + giao diện SC-13.", 2, "", "Mọi 営業日 chưa giao xong (G-14) – đọc."),
+    "E10-04": (3, "1 màn hình ít trường (SC-14).", 2, "", "Bố cục tablet, kiểm nhập có sẵn."),
+    # ---------------- E11 ----------------
+    "E11-01-DB1": (2, "Chỉ database: hàm close_day (D-33).", 4, "TB", "G-21, khóa tư vấn, G-18, snapshot tiền (DD-05)."),
+    "E11-01-DB2": (3, "Cột mới + tính lại dữ liệu cũ (D-25).", 2, "T", "Tính tổng tiền 1 lần cho dòng cũ."),
+    "E11-01-API": (2, "Chỉ 1 API (API-27).", 2, "", "Gọi rpc, đổi lỗi."),
+    "E11-01-T": (2, "Test lớp API / database (T09).", 3, "BD", "M_41, M_60, M_59 khi 2 người cùng 締め."),
+    "E11-02-API": (2, "Chỉ 1 API (API-26).", 3, "T", "Tổng theo loại, 取消, chưa giao, phiếu chờ, snapshot vs hiện tại."),
+    "E11-02-UI": (4, "1 màn hình > 8 mục + hộp xác nhận (SC-15).", 3, "", "Checklist khóa nút, snapshot vs hiện tại, M_41 (G-18)."),
+    "E11-03-DB": (2, "Chỉ database: 1 bảng + bucket (D-07).", 2, "", "Chỉ thêm, RLS theo vai trò."),
+    "E11-03-API": (3, "2 API (API-28, API-29).", 4, "", "SHA-256, xuất lại giống hệt, lỗi Storage vẫn trả file, lưu vết (ADR-010)."),
+    "E11-03-T": (2, "Test lớp API (DD-05).", 3, "", "M_63, cùng mã băm, lỗi Storage."),
+    "E11-04": (3, "Database (cờ) + giao diện cảnh báo (2 lớp).", 3, "", "Chỉ khi đã xuất, 旧版, M_111 (ADR-010)."),
+    "E11-05": (1, "1 câu hỏi (ADR-010).", 2, "Q", "Chờ mẫu file khách (GAP-19)."),
+    "E11-06": (2, "Chỉ 1 API (API-28 định dạng).", 3, "Q", "Cột, mã ký tự, xuống dòng theo mẫu; mẫu chưa có (GAP-19)."),
+    "E11-07": (2, "Chỉ khu vực lịch sử SC-19.", 2, "", "Dùng lại API-29."),
+    # ---------------- E12 – 完納奨励金 ----------------
+    "E12-01": (2, "Chỉ 1 hàm chọn phiên bản (DD-06 bước 2).", 3, "TB", "approved, effective_from ≤ 支払期限 lớn nhất, M_115 (W-08); chạm 料率 và ngày."),
+    "E12-02": (2, "Chỉ 1 hàm tính (DD-06 bước 3).", 3, "T", "Đổi phân số, floor, BigInt, 係数 từ market_rules (L8, D-31, P-10)."),
+    "E12-03": (2, "Chỉ 1 hàm 判定 (DD-06 bước 3).", 3, "TB", "3 trạng thái, không ân hạn, biên ngày (L8, P-09)."),
+    "E12-04": (2, "Chỉ 1 API (API-32).", 2, "TB", "Gọi lại hàm E12-01…03, không lưu vết."),
+    "E12-05-DB": (2, "Chỉ database: 3 cột + unique + hàm record_payment (D-26, D-27).", 4, "TBD", "Khóa dòng, G-22, G-23, lưu + lưu vết 1 transaction (P-08)."),
+    "E12-05-API": (2, "Chỉ 1 API (API-31).", 2, "T", "Gọi rpc, trả 判定 + 奨励金額."),
+    "E12-05-T": (2, "Test lớp API / database (D-26).", 4, "TB", "G-22, G-23, đổi 料率 không đổi số đã lưu, lưu vết (P-02)."),
+    "E12-06-API": (2, "Chỉ 1 API (API-30).", 2, "T", "Lọc 判定, tổng Σ incentive_amount đọc giá trị đã lưu."),
+    "E12-06-UI1": (3, "1 màn hình 7 mục: A-1…A-3, B-1…B-4 (SC-17).", 2, "T", "Hiện công thức và số tiền từng dòng."),
+    "E12-06-UI2": (2, "Chỉ khu vực hộp D (SC-17).", 3, "TB", "Xem trước khi đổi ngày, M_61 / 62 / 67 / 113 / 115."),
+    "E12-07": (3, "Chuyển dữ liệu cũ sang cấu trúc mới (D-04, D-26).", 3, "T", "Gắn v1, chỉ dòng đã trả, số phải khớp T13."),
+    "E12-08": (2, "Khung test lớp hàm / API (M4).", 3, "TQ", "Đọc vector CSV, so số tiền; dữ liệu Phụ lục C chưa có (GAP-07)."),
+    "E12-09": (2, "3 câu hỏi, SC-17 + DD-06 + DD-04.", 3, "TQ", "Câu trả lời có thể thêm chức năng lập 請求 (GAP-01, GAP-02)."),
+    "E12-10": (1, "1 câu hỏi (SC-17 mục 5, G-23).", 3, "TQ", "Câu trả lời có thể mở khóa kết quả đã lưu (GAP-03)."),
+    # ---------------- E13 ----------------
+    "E13-01-UI1": (2, "Chỉ lớp trình duyệt: Service Worker (ADR-012).", 3, "DQ", "2 trình duyệt, cache app; Q8 chưa có trả lời."),
+    "E13-01-UI2": (2, "Chỉ lớp trình duyệt: IndexedDB + gửi lại (ADR-012).", 3, "DQ", "Hàng đợi, client_uuid, gửi lại; Q8 chưa có trả lời."),
+    "E13-02": (3, "2 bảng cùng mẫu thêm cột + unique (D-17, D-18).", 2, "D", "Unique client_uuid chống trùng."),
+    "E13-03-API": (2, "Chỉ 1 API (API-21).", 4, "BDQ", "L1, L5, 営業日 theo client_recorded_at, chống trùng, cấp lot_no; Q8."),
+    "E13-03-T": (2, "Test lớp API (ADR-012).", 4, "BDQ", "Gửi lại, 2 tablet giao vượt, 01:30 offline; Q8."),
+    "E13-04-UI1": (2, "Chỉ khu vực header H-8 (CS-22).", 2, "D", "Trạng thái mạng + đếm 未送信."),
+    "E13-04-UI2": (5, "Thay đổi khung giao diện dùng chung cho mọi màn hình (CS-22).", 2, "", "1 luật: mất mạng → khóa thao tác bắt buộc online + M_103."),
+    "E13-04-UI3": (2, "Chỉ khu vực form SC-05 + hàng đợi.", 3, "DQ", "Số tạm, M_101 / M_102; Q8."),
+    "E13-04-UI4": (2, "Chỉ khu vực form SC-14 + hàng đợi.", 3, "DQ", "M_101 / M_102, giao vượt chỉ biết khi đồng bộ; Q8."),
+    "E13-04-UI5": (2, "Chỉ lớp client đồng bộ (API-21).", 3, "DQ", "Tự gửi khi có mạng, kết quả từng dòng M_104 / M_105; Q8."),
+    "E13-05-UI1": (3, "Thiết kế 1 màn hình (SC-24).", 2, "Q", "Chưa có wireframe; Q8 ảnh hưởng nội dung."),
+    "E13-05-UI2": (3, "1 màn hình ít trường (SC-24).", 3, "D", "Gửi lại, xử lý dòng lỗi, không tự sửa số (ADR-012)."),
+    "E13-06": (1, "1 câu hỏi (Q8).", 2, "DQ", "Q8 chưa có trả lời; ảnh hưởng hàng đợi offline."),
+    # ---------------- E14 ----------------
+    "E14-01": (5, "Hồi quy toàn hệ thống (T01–T17).", 2, "", "Kịch bản có sẵn, cập nhật dữ liệu theo chợ."),
+    "E14-02": (2, "Test lớp API / database (L7, G-26).", 3, "", "修正依頼 + phiên bản quy tắc, kiểm 2 lớp."),
+    "E14-03-T1": (5, "Mọi bảng (D-40).", 2, "", "1 mẫu kiểm quyền / bảng (anon, authenticated)."),
+    "E14-03-T2": (5, "Mọi bảng nghiệp vụ (D-37).", 2, "", "1 mẫu: admin đọc rỗng, lưu vết bị che (CS-24)."),
+    "E14-04-T1": (5, "Nhiều màn hình tablet: SC-05, SC-08, SC-10, SC-14.", 2, "", "Kịch bản theo thứ tự, kết quả mong đợi có sẵn từ T01–T17."),
+    "E14-04-T2": (5, "Nhiều màn hình: SC-12, SC-15, SC-19.", 2, "", "Kịch bản theo thứ tự 修正依頼 → 締め → CSV → 再出力."),
+    "E14-04-T3": (3, "SC-17 + SC-18.", 2, "TB", "Đối chiếu số tiền đúng hạn / trễ hạn theo phiên bản (L8)."),
+}
+
+# Lịch sử tách vì SWP 13 / 21 (skill mục 4): (id gốc, vòng, S, C nền, mục cộng, các id mới, lý do tách)
+DA_TACH = [
+    ("E02-02", 1, 5, 4, "", ["E02-02-DB1", "E02-02-DB2", "E02-02-T"], "Hàm lưu vết + áp cho mọi bảng + test trong 1 issue."),
+    ("E03-02-DB", 1, 5, 3, "", ["E03-02-DB1", "E03-02-DB2"], "Migration 6 bảng cùng lúc → 2 nhóm 3 bảng."),
+    ("E04-01-DB", 1, 3, 4, "TB", ["E04-01-DB1", "E04-01-DB2"], "Tách bảng / ràng buộc khỏi migration phiên bản v1."),
+    ("E04-05", 1, 4, 3, "B", ["E04-05-UI1", "E04-05-UI2"], "Tách danh sách / lịch sử khỏi hộp soạn / duyệt."),
+    ("E05-02-DB", 1, 5, 4, "", ["E05-02-DB1", "E05-02-DB2", "E05-02-DB3"], "Tách hàm has_role khỏi 2 nhóm policy."),
+    ("E05-05", 1, 3, 4, "Q", ["E05-05-API", "E05-05-UI"], "Tách API-02 (phụ thuộc spike) khỏi giao diện SC-01."),
+    ("E06-05", 1, 4, 3, "BQ", ["E06-05-UI1", "E06-05-UI2"], "Tách khung 2 tab / lịch sử khỏi hộp 審査結果."),
+    ("E08-03", 1, 3, 4, "B", ["E08-03-DB", "E08-03-API", "E08-03-T"], "Tách theo lớp."),
+    ("E10-02", 1, 3, 4, "B", ["E10-02-DB", "E10-02-API"], "Tách theo lớp."),
+    ("E11-01-DB", 1, 3, 4, "TB", ["E11-01-DB1", "E11-01-DB2"], "Tách hàm close_day khỏi cột snapshot + dữ liệu cũ."),
+    ("E11-02", 1, 4, 3, "T", ["E11-02-API", "E11-02-UI"], "Tách theo lớp."),
+    ("E12-06-UI", 1, 4, 3, "TB", ["E12-06-UI1", "E12-06-UI2"], "Tách danh sách khỏi hộp ghi 入金日 có xem trước."),
+    ("E13-01", 1, 3, 3, "DQ", ["E13-01-UI1", "E13-01-UI2"], "Tách spike Service Worker khỏi spike hàng đợi."),
+    ("E13-04", 1, 5, 4, "DQ", ["E13-04-UI1", "E13-04-UI2", "E13-04-UI3", "E13-04-UI4", "E13-04-UI5"], "Tách header, chặn thao tác, 2 màn hình offline, tự gửi."),
+    ("E13-05", 1, 3, 3, "DQ", ["E13-05-UI1", "E13-05-UI2"], "Tách thiết kế khỏi làm màn hình."),
+    ("E14-03", 1, 5, 3, "", ["E14-03-T1", "E14-03-T2"], "Tách quyền mức bảng khỏi RLS admin."),
+    ("E14-04", 1, 5, 3, "", ["E14-04-T1", "E14-04-T2"], "Tách kịch bản sàn chợ khỏi văn phòng."),
+    ("E14-04-T2", 2, 5, 2, "T", ["E14-04-T2", "E14-04-T3"], "Vòng 2: tách kịch bản 完納奨励金 khỏi kịch bản văn phòng."),
+]

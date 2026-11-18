@@ -1,0 +1,2347 @@
+{
+ "E01": {
+  "number": 1,
+  "id": 6459359952,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIC0A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/1",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWHY",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E01"
+  ]
+ },
+ "E01-01": {
+  "number": 2,
+  "id": 6459360421,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIEpQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/2",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWIs",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E01"
+  ]
+ },
+ "E01-02": {
+  "number": 3,
+  "id": 6459360879,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIGbw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/3",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWJI",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E01"
+  ]
+ },
+ "E01-03": {
+  "number": 4,
+  "id": 6459361356,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIITA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/4",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWJo",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E01"
+  ]
+ },
+ "E01-04": {
+  "number": 5,
+  "id": 6459361823,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIKHw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/5",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWJ8",
+  "fields_set": [
+   2,
+   4,
+   "BE-2",
+   "E01"
+  ]
+ },
+ "E01-05": {
+  "number": 6,
+  "id": 6459362266,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIL2g",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/6",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWKU",
+  "fields_set": [
+   2,
+   4,
+   "FE-1",
+   "E01"
+  ]
+ },
+ "E01-06": {
+  "number": 7,
+  "id": 6459362710,
+  "node_id": "I_kwDOVyhtYs8AAAABgQINlg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/7",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWK0",
+  "fields_set": [
+   5,
+   12,
+   "BrSE",
+   "E01"
+  ]
+ },
+ "E01-07": {
+  "number": 8,
+  "id": 6459363179,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIPaw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/8",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWLM",
+  "fields_set": [
+   1,
+   2,
+   "BE-2",
+   "E01"
+  ]
+ },
+ "E02": {
+  "number": 9,
+  "id": 6459363694,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIRbg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/9",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWg0",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E02"
+  ]
+ },
+ "E02-01": {
+  "number": 10,
+  "id": 6459364248,
+  "node_id": "I_kwDOVyhtYs8AAAABgQITmA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/10",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWh0",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E02"
+  ]
+ },
+ "E02-02": {
+  "number": 16,
+  "id": 6459367268,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIfZA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/16",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWiE",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E02"
+  ]
+ },
+ "E02-02-DB1": {
+  "number": 17,
+  "id": 6459367788,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIhbA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/17",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWkU",
+  "fields_set": [
+   5,
+   10,
+   "BE-1",
+   "E02"
+  ]
+ },
+ "E02-02-DB2": {
+  "number": 18,
+  "id": 6459368259,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIjQw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/18",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWkk",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E02"
+  ]
+ },
+ "E02-02-T": {
+  "number": 19,
+  "id": 6459368744,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIlKA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/19",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWlA",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E02"
+  ]
+ },
+ "E02-03": {
+  "number": 21,
+  "id": 6459369680,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIo0A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/21",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWic",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E02"
+  ]
+ },
+ "E02-03-DB": {
+  "number": 22,
+  "id": 6459370178,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIqwg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/22",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWj8",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E02"
+  ]
+ },
+ "E02-03-API": {
+  "number": 23,
+  "id": 6459370623,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIsfw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/23",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWkY",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E02"
+  ]
+ },
+ "E02-03-UI": {
+  "number": 24,
+  "id": 6459371120,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIucA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/24",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWko",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E02"
+  ]
+ },
+ "E02-03-T": {
+  "number": 25,
+  "id": 6459371628,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIwbA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/25",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWlM",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E02"
+  ]
+ },
+ "E02-04": {
+  "number": 26,
+  "id": 6459372075,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIyKw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/26",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtWi8",
+  "fields_set": [
+   2,
+   6,
+   "PL",
+   "E02"
+  ]
+ },
+ "E03": {
+  "number": 11,
+  "id": 6459364728,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIVeA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/11",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXEU",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E03"
+  ]
+ },
+ "E03-01": {
+  "number": 12,
+  "id": 6459365161,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIXKQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/12",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXFs",
+  "fields_set": [
+   1,
+   2,
+   "BE-1",
+   "E03"
+  ]
+ },
+ "E03-02": {
+  "number": 13,
+  "id": 6459365805,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIZrQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/13",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXF8",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E03"
+  ]
+ },
+ "E03-02-DB1": {
+  "number": 27,
+  "id": 6459372542,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIz_g",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/27",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXHw",
+  "fields_set": [
+   5,
+   10,
+   "BE-1",
+   "E03"
+  ]
+ },
+ "E03-02-DB2": {
+  "number": 28,
+  "id": 6459373011,
+  "node_id": "I_kwDOVyhtYs8AAAABgQI10w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/28",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXIM",
+  "fields_set": [
+   5,
+   10,
+   "BE-1",
+   "E03"
+  ]
+ },
+ "E03-02-API": {
+  "number": 29,
+  "id": 6459373502,
+  "node_id": "I_kwDOVyhtYs8AAAABgQI3vg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/29",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXIY",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E03"
+  ]
+ },
+ "E03-02-T": {
+  "number": 30,
+  "id": 6459374005,
+  "node_id": "I_kwDOVyhtYs8AAAABgQI5tQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/30",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXIw",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E03"
+  ]
+ },
+ "E03-03": {
+  "number": 33,
+  "id": 6459375560,
+  "node_id": "I_kwDOVyhtYs8AAAABgQI_yA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/33",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXGI",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E03"
+  ]
+ },
+ "E03-03-DB": {
+  "number": 34,
+  "id": 6459375969,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJBYQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/34",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXHc",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E03"
+  ]
+ },
+ "E03-03-T": {
+  "number": 35,
+  "id": 6459376439,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJDNw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/35",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXIA",
+  "fields_set": [
+   5,
+   10,
+   "QA-1",
+   "E03"
+  ]
+ },
+ "E03-04": {
+  "number": 36,
+  "id": 6459376917,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJFFQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/36",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXGc",
+  "fields_set": [
+   5,
+   10,
+   "FE-1",
+   "E03"
+  ]
+ },
+ "E03-05": {
+  "number": 37,
+  "id": 6459377483,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJHSw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/37",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXG4",
+  "fields_set": [
+   3,
+   8,
+   "BrSE",
+   "E03"
+  ]
+ },
+ "E04": {
+  "number": 31,
+  "id": 6459374509,
+  "node_id": "I_kwDOVyhtYs8AAAABgQI7rQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/31",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXl0",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E04"
+  ]
+ },
+ "E04-01": {
+  "number": 32,
+  "id": 6459375064,
+  "node_id": "I_kwDOVyhtYs8AAAABgQI92A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/32",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXn4",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E04"
+  ]
+ },
+ "E04-01-DB1": {
+  "number": 38,
+  "id": 6459377957,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJJJQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/38",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXpY",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E04"
+  ]
+ },
+ "E04-01-DB2": {
+  "number": 39,
+  "id": 6459378459,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJLGw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/39",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXpk",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E04"
+  ]
+ },
+ "E04-01-T": {
+  "number": 40,
+  "id": 6459378892,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJMzA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/40",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXp8",
+  "fields_set": [
+   5,
+   10,
+   "QA-1",
+   "E04"
+  ]
+ },
+ "E04-02": {
+  "number": 41,
+  "id": 6459379451,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJO-w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/41",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXn8",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E04"
+  ]
+ },
+ "E04-03": {
+  "number": 42,
+  "id": 6459379946,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJQ6g",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/42",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXoY",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E04"
+  ]
+ },
+ "E04-03-DB": {
+  "number": 43,
+  "id": 6459380438,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJS1g",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/43",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXp4",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E04"
+  ]
+ },
+ "E04-03-API": {
+  "number": 44,
+  "id": 6459380944,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJU0A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/44",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXqg",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E04"
+  ]
+ },
+ "E04-03-T": {
+  "number": 45,
+  "id": 6459381457,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJW0Q",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/45",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXrY",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E04"
+  ]
+ },
+ "E04-04": {
+  "number": 46,
+  "id": 6459381963,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJYyw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/46",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXow",
+  "fields_set": [
+   8,
+   20,
+   "BrSE",
+   "E04"
+  ]
+ },
+ "E04-05": {
+  "number": 47,
+  "id": 6459382449,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJasQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/47",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXpE",
+  "fields_set": [
+   null,
+   null,
+   "FE-1",
+   "E04"
+  ]
+ },
+ "E04-05-UI1": {
+  "number": 48,
+  "id": 6459382937,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJcmQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/48",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXrE",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E04"
+  ]
+ },
+ "E04-05-UI2": {
+  "number": 49,
+  "id": 6459383369,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJeSQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/49",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtXrg",
+  "fields_set": [
+   8,
+   16,
+   "FE-1",
+   "E04"
+  ]
+ },
+ "E05": {
+  "number": 14,
+  "id": 6459366261,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIbdQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/14",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYXs",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E05"
+  ]
+ },
+ "E05-01": {
+  "number": 15,
+  "id": 6459366812,
+  "node_id": "I_kwDOVyhtYs8AAAABgQIdnA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/15",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYZo",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-01-DB": {
+  "number": 50,
+  "id": 6459383872,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJgQA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/50",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYbw",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-01-T": {
+  "number": 51,
+  "id": 6459384368,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJiMA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/51",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYcA",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E05"
+  ]
+ },
+ "E05-02": {
+  "number": 20,
+  "id": 6459369223,
+  "node_id": "I_kwDOVyhtYs8AAAABgQInBw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/20",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYaA",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-02-DB1": {
+  "number": 52,
+  "id": 6459384900,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJkRA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/52",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYcg",
+  "fields_set": [
+   5,
+   10,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-02-DB2": {
+  "number": 53,
+  "id": 6459385386,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJmKg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/53",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYdA",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-02-DB3": {
+  "number": 54,
+  "id": 6459385832,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJn6A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/54",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYdU",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-02-T": {
+  "number": 55,
+  "id": 6459386340,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJp5A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/55",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYd4",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E05"
+  ]
+ },
+ "E05-03": {
+  "number": 56,
+  "id": 6459386861,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJr7Q",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/56",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYaY",
+  "fields_set": [
+   8,
+   16,
+   "FE-1",
+   "E05"
+  ]
+ },
+ "E05-04": {
+  "number": 57,
+  "id": 6459387454,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJuPg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/57",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYao",
+  "fields_set": [
+   5,
+   10,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-05": {
+  "number": 59,
+  "id": 6459388415,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJx_w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/59",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYbA",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-05-API": {
+  "number": 60,
+  "id": 6459388876,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJzzA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/60",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYdo",
+  "fields_set": [
+   8,
+   20,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-05-UI": {
+  "number": 61,
+  "id": 6459389335,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJ1lw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/61",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYeY",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E05"
+  ]
+ },
+ "E05-06": {
+  "number": 62,
+  "id": 6459389797,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJ3ZQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/62",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYbY",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-06-API": {
+  "number": 63,
+  "id": 6459390287,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJ5Tw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/63",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYeI",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-06-UI": {
+  "number": 64,
+  "id": 6459390728,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJ7CA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/64",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYeo",
+  "fields_set": [
+   8,
+   16,
+   "FE-1",
+   "E05"
+  ]
+ },
+ "E05-06-T": {
+  "number": 65,
+  "id": 6459391196,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJ83A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/65",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYe8",
+  "fields_set": [
+   5,
+   10,
+   "QA-1",
+   "E05"
+  ]
+ },
+ "E05-07": {
+  "number": 66,
+  "id": 6459391630,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJ-jg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/66",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYb4",
+  "fields_set": [
+   5,
+   12,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-08": {
+  "number": 67,
+  "id": 6459392091,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKAWw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/67",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYcQ",
+  "fields_set": [
+   1,
+   2,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E05-09": {
+  "number": 58,
+  "id": 6459387945,
+  "node_id": "I_kwDOVyhtYs8AAAABgQJwKQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/58",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtYc0",
+  "fields_set": [
+   8,
+   20,
+   "BE-1",
+   "E05"
+  ]
+ },
+ "E06": {
+  "number": 68,
+  "id": 6459392577,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKCQQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/68",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZdk",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E06"
+  ]
+ },
+ "E06-01": {
+  "number": 69,
+  "id": 6459393055,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKEHw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/69",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZfQ",
+  "fields_set": [
+   null,
+   null,
+   "BE-2",
+   "E06"
+  ]
+ },
+ "E06-01-DB": {
+  "number": 70,
+  "id": 6459393505,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKF4Q",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/70",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZg8",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E06"
+  ]
+ },
+ "E06-01-T": {
+  "number": 71,
+  "id": 6459394004,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKH1A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/71",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZhQ",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E06"
+  ]
+ },
+ "E06-02": {
+  "number": 72,
+  "id": 6459394483,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKJsw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/72",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZfk",
+  "fields_set": [
+   2,
+   4,
+   "BE-2",
+   "E06"
+  ]
+ },
+ "E06-03": {
+  "number": 73,
+  "id": 6459394923,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKLaw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/73",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZf8",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E06"
+  ]
+ },
+ "E06-04": {
+  "number": 74,
+  "id": 6459395404,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKNTA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/74",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZgE",
+  "fields_set": [
+   null,
+   null,
+   "BE-2",
+   "E06"
+  ]
+ },
+ "E06-04-DB": {
+  "number": 75,
+  "id": 6459395859,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKPEw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/75",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZis",
+  "fields_set": [
+   8,
+   20,
+   "BE-2",
+   "E06"
+  ]
+ },
+ "E06-04-API": {
+  "number": 76,
+  "id": 6459396338,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKQ8g",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/76",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZjQ",
+  "fields_set": [
+   8,
+   20,
+   "BE-2",
+   "E06"
+  ]
+ },
+ "E06-04-T": {
+  "number": 77,
+  "id": 6459396769,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKSoQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/77",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZjs",
+  "fields_set": [
+   5,
+   12,
+   "QA-1",
+   "E06"
+  ]
+ },
+ "E06-05": {
+  "number": 78,
+  "id": 6459397245,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKUfQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/78",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZgg",
+  "fields_set": [
+   null,
+   null,
+   "FE-1",
+   "E06"
+  ]
+ },
+ "E06-05-UI1": {
+  "number": 79,
+  "id": 6459397690,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKWOg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/79",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZi8",
+  "fields_set": [
+   8,
+   20,
+   "FE-1",
+   "E06"
+  ]
+ },
+ "E06-05-UI2": {
+  "number": 80,
+  "id": 6459398157,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKYDQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/80",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZjc",
+  "fields_set": [
+   5,
+   12,
+   "FE-1",
+   "E06"
+  ]
+ },
+ "E06-06": {
+  "number": 81,
+  "id": 6459398603,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKZyw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/81",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZhE",
+  "fields_set": [
+   3,
+   6,
+   "BE-2",
+   "E06"
+  ]
+ },
+ "E06-07": {
+  "number": 82,
+  "id": 6459399083,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKbqw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/82",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZhc",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E06"
+  ]
+ },
+ "E06-08": {
+  "number": 83,
+  "id": 6459399560,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKdiA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/83",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZh4",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E06"
+  ]
+ },
+ "E06-09": {
+  "number": 84,
+  "id": 6459399988,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKfNA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/84",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtZiQ",
+  "fields_set": [
+   3,
+   8,
+   "BrSE",
+   "E06"
+  ]
+ },
+ "E07": {
+  "number": 85,
+  "id": 6459400427,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKg6w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/85",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtaaM",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E07"
+  ]
+ },
+ "E07-01": {
+  "number": 86,
+  "id": 6459400872,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKiqA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/86",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtaa0",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E07"
+  ]
+ },
+ "E07-02": {
+  "number": 87,
+  "id": 6459401386,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKkqg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/87",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtabU",
+  "fields_set": [
+   2,
+   4,
+   "BE-2",
+   "E07"
+  ]
+ },
+ "E07-03": {
+  "number": 88,
+  "id": 6459401868,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKmjA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/88",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtabg",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E07"
+  ]
+ },
+ "E07-04": {
+  "number": 89,
+  "id": 6459402388,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKolA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/89",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtacA",
+  "fields_set": [
+   1,
+   2,
+   "FE-1",
+   "E07"
+  ]
+ },
+ "E08": {
+  "number": 90,
+  "id": 6459402864,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKqcA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/90",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtaoM",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E08"
+  ]
+ },
+ "E08-01": {
+  "number": 91,
+  "id": 6459403305,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKsKQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/91",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtapQ",
+  "fields_set": [
+   5,
+   10,
+   "BE-2",
+   "E08"
+  ]
+ },
+ "E08-02": {
+  "number": 92,
+  "id": 6459403757,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKt7Q",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/92",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtap4",
+  "fields_set": [
+   null,
+   null,
+   "BE-2",
+   "E08"
+  ]
+ },
+ "E08-02-DB": {
+  "number": 93,
+  "id": 6459404244,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKv1A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/93",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtasE",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E08"
+  ]
+ },
+ "E08-02-API": {
+  "number": 94,
+  "id": 6459404709,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKxpQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/94",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtass",
+  "fields_set": [
+   3,
+   6,
+   "BE-2",
+   "E08"
+  ]
+ },
+ "E08-02-T": {
+  "number": 95,
+  "id": 6459405177,
+  "node_id": "I_kwDOVyhtYs8AAAABgQKzeQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/95",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtatI",
+  "fields_set": [
+   8,
+   16,
+   "QA-1",
+   "E08"
+  ]
+ },
+ "E08-03": {
+  "number": 96,
+  "id": 6459405645,
+  "node_id": "I_kwDOVyhtYs8AAAABgQK1TQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/96",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtap8",
+  "fields_set": [
+   null,
+   null,
+   "BE-2",
+   "E08"
+  ]
+ },
+ "E08-03-DB": {
+  "number": 97,
+  "id": 6459406081,
+  "node_id": "I_kwDOVyhtYs8AAAABgQK3AQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/97",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtars",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E08"
+  ]
+ },
+ "E08-03-API": {
+  "number": 98,
+  "id": 6459406525,
+  "node_id": "I_kwDOVyhtYs8AAAABgQK4vQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/98",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtasY",
+  "fields_set": [
+   2,
+   4,
+   "BE-2",
+   "E08"
+  ]
+ },
+ "E08-03-T": {
+  "number": 99,
+  "id": 6459406969,
+  "node_id": "I_kwDOVyhtYs8AAAABgQK6eQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/99",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtas4",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E08"
+  ]
+ },
+ "E08-04": {
+  "number": 100,
+  "id": 6459407512,
+  "node_id": "I_kwDOVyhtYs8AAAABgQK8mA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/100",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtaqI",
+  "fields_set": [
+   5,
+   10,
+   "BE-2",
+   "E08"
+  ]
+ },
+ "E08-05": {
+  "number": 101,
+  "id": 6459407954,
+  "node_id": "I_kwDOVyhtYs8AAAABgQK-Ug",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/101",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtaqw",
+  "fields_set": [
+   2,
+   4,
+   "FE-1",
+   "E08"
+  ]
+ },
+ "E08-06": {
+  "number": 102,
+  "id": 6459408502,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLAdg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/102",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtaq8",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E08"
+  ]
+ },
+ "E08-07": {
+  "number": 103,
+  "id": 6459409009,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLCcQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/103",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtarU",
+  "fields_set": [
+   1,
+   2,
+   "FE-1",
+   "E08"
+  ]
+ },
+ "E09": {
+  "number": 104,
+  "id": 6459409421,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLEDQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/104",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtbhU",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E09"
+  ]
+ },
+ "E09-01": {
+  "number": 105,
+  "id": 6459410113,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLGwQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/105",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtbj4",
+  "fields_set": [
+   5,
+   10,
+   "BE-2",
+   "E09"
+  ]
+ },
+ "E09-02": {
+  "number": 106,
+  "id": 6459410610,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLIsg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/106",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtbkc",
+  "fields_set": [
+   null,
+   null,
+   "BE-2",
+   "E09"
+  ]
+ },
+ "E09-02-DB": {
+  "number": 107,
+  "id": 6459411254,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLLNg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/107",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtblU",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E09"
+  ]
+ },
+ "E09-02-API": {
+  "number": 108,
+  "id": 6459411659,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLMyw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/108",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtbl0",
+  "fields_set": [
+   2,
+   4,
+   "BE-2",
+   "E09"
+  ]
+ },
+ "E09-02-T": {
+  "number": 109,
+  "id": 6459412112,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLOkA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/109",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtbmE",
+  "fields_set": [
+   8,
+   16,
+   "QA-1",
+   "E09"
+  ]
+ },
+ "E09-03": {
+  "number": 110,
+  "id": 6459412571,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLQWw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/110",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtbk0",
+  "fields_set": [
+   5,
+   10,
+   "FE-1",
+   "E09"
+  ]
+ },
+ "E09-04": {
+  "number": 111,
+  "id": 6459413076,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLSVA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/111",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtblI",
+  "fields_set": [
+   2,
+   4,
+   "FE-1",
+   "E09"
+  ]
+ },
+ "E10": {
+  "number": 112,
+  "id": 6459413594,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLUWg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/112",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcBU",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E10"
+  ]
+ },
+ "E10-01": {
+  "number": 113,
+  "id": 6459414084,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLWRA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/113",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcDE",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E10"
+  ]
+ },
+ "E10-02": {
+  "number": 114,
+  "id": 6459414579,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLYMw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/114",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcDQ",
+  "fields_set": [
+   null,
+   null,
+   "BE-2",
+   "E10"
+  ]
+ },
+ "E10-02-DB": {
+  "number": 115,
+  "id": 6459415064,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLaGA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/115",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcE8",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E10"
+  ]
+ },
+ "E10-02-API": {
+  "number": 116,
+  "id": 6459415557,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLcBQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/116",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcFQ",
+  "fields_set": [
+   2,
+   4,
+   "BE-2",
+   "E10"
+  ]
+ },
+ "E10-03": {
+  "number": 117,
+  "id": 6459416065,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLeAQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/117",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcDg",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E10"
+  ]
+ },
+ "E10-04": {
+  "number": 118,
+  "id": 6459416535,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLf1w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/118",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcD8",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E10"
+  ]
+ },
+ "E11": {
+  "number": 119,
+  "id": 6459416976,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLhkA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/119",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcX0",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E11"
+  ]
+ },
+ "E11-01": {
+  "number": 120,
+  "id": 6459417393,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLjMQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/120",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcYk",
+  "fields_set": [
+   null,
+   null,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-01-DB1": {
+  "number": 121,
+  "id": 6459417869,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLlDQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/121",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtce0",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-01-DB2": {
+  "number": 122,
+  "id": 6459418336,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLm4A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/122",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcfI",
+  "fields_set": [
+   5,
+   10,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-01-API": {
+  "number": 123,
+  "id": 6459418758,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLohg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/123",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcfg",
+  "fields_set": [
+   2,
+   4,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-01-T": {
+  "number": 124,
+  "id": 6459419191,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLqNw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/124",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcgI",
+  "fields_set": [
+   8,
+   16,
+   "QA-1",
+   "E11"
+  ]
+ },
+ "E11-02": {
+  "number": 125,
+  "id": 6459419668,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLsFA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/125",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcZE",
+  "fields_set": [
+   null,
+   null,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-02-API": {
+  "number": 126,
+  "id": 6459420131,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLt4w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/126",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcbQ",
+  "fields_set": [
+   5,
+   10,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-02-UI": {
+  "number": 127,
+  "id": 6459420578,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLvog",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/127",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcbs",
+  "fields_set": [
+   8,
+   16,
+   "FE-1",
+   "E11"
+  ]
+ },
+ "E11-03": {
+  "number": 128,
+  "id": 6459421031,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLxZw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/128",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcZg",
+  "fields_set": [
+   null,
+   null,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-03-DB": {
+  "number": 129,
+  "id": 6459421477,
+  "node_id": "I_kwDOVyhtYs8AAAABgQLzJQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/129",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcbc",
+  "fields_set": [
+   2,
+   4,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-03-API": {
+  "number": 130,
+  "id": 6459421911,
+  "node_id": "I_kwDOVyhtYs8AAAABgQL01w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/130",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcb4",
+  "fields_set": [
+   8,
+   16,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-03-T": {
+  "number": 131,
+  "id": 6459422340,
+  "node_id": "I_kwDOVyhtYs8AAAABgQL2hA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/131",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcck",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E11"
+  ]
+ },
+ "E11-04": {
+  "number": 132,
+  "id": 6459422844,
+  "node_id": "I_kwDOVyhtYs8AAAABgQL4fA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/132",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcZs",
+  "fields_set": [
+   5,
+   10,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-05": {
+  "number": 133,
+  "id": 6459423285,
+  "node_id": "I_kwDOVyhtYs8AAAABgQL6NQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/133",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcaA",
+  "fields_set": [
+   2,
+   6,
+   "BrSE",
+   "E11"
+  ]
+ },
+ "E11-06": {
+  "number": 134,
+  "id": 6459423752,
+  "node_id": "I_kwDOVyhtYs8AAAABgQL8CA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/134",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcaU",
+  "fields_set": [
+   5,
+   12,
+   "BE-2",
+   "E11"
+  ]
+ },
+ "E11-07": {
+  "number": 135,
+  "id": 6459424262,
+  "node_id": "I_kwDOVyhtYs8AAAABgQL-Bg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/135",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtcak",
+  "fields_set": [
+   2,
+   4,
+   "FE-1",
+   "E11"
+  ]
+ },
+ "E12": {
+  "number": 136,
+  "id": 6459424731,
+  "node_id": "I_kwDOVyhtYs8AAAABgQL_2w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/136",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdi4",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E12"
+  ]
+ },
+ "E12-01": {
+  "number": 137,
+  "id": 6459425245,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMB3Q",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/137",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdk4",
+  "fields_set": [
+   5,
+   10,
+   "BE-1",
+   "E12"
+  ]
+ },
+ "E12-02": {
+  "number": 138,
+  "id": 6459425677,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMDjQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/138",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdlM",
+  "fields_set": [
+   5,
+   10,
+   "BE-1",
+   "E12"
+  ]
+ },
+ "E12-03": {
+  "number": 139,
+  "id": 6459426181,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMFhQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/139",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdlw",
+  "fields_set": [
+   5,
+   10,
+   "BE-1",
+   "E12"
+  ]
+ },
+ "E12-04": {
+  "number": 140,
+  "id": 6459426646,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMHVg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/140",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdmI",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E12"
+  ]
+ },
+ "E12-05": {
+  "number": 141,
+  "id": 6459427163,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMJWw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/141",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdmg",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E12"
+  ]
+ },
+ "E12-05-DB": {
+  "number": 142,
+  "id": 6459427608,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMLGA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/142",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdo4",
+  "fields_set": [
+   8,
+   16,
+   "BE-1",
+   "E12"
+  ]
+ },
+ "E12-05-API": {
+  "number": 143,
+  "id": 6459428065,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMM4Q",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/143",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdpU",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E12"
+  ]
+ },
+ "E12-05-T": {
+  "number": 144,
+  "id": 6459428497,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMOkQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/144",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdpo",
+  "fields_set": [
+   5,
+   10,
+   "QA-1",
+   "E12"
+  ]
+ },
+ "E12-06": {
+  "number": 145,
+  "id": 6459428930,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMQQg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/145",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdm8",
+  "fields_set": [
+   null,
+   null,
+   "FE-1",
+   "E12"
+  ]
+ },
+ "E12-06-API": {
+  "number": 146,
+  "id": 6459429395,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMSEw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/146",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdog",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E12"
+  ]
+ },
+ "E12-06-UI1": {
+  "number": 147,
+  "id": 6459429848,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMT2A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/147",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdpA",
+  "fields_set": [
+   5,
+   10,
+   "FE-1",
+   "E12"
+  ]
+ },
+ "E12-06-UI2": {
+  "number": 148,
+  "id": 6459430312,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMVqA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/148",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdpc",
+  "fields_set": [
+   5,
+   10,
+   "FE-1",
+   "E12"
+  ]
+ },
+ "E12-07": {
+  "number": 149,
+  "id": 6459430772,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMXdA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/149",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdnI",
+  "fields_set": [
+   5,
+   10,
+   "BE-1",
+   "E12"
+  ]
+ },
+ "E12-08": {
+  "number": 150,
+  "id": 6459431246,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMZTg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/150",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdnY",
+  "fields_set": [
+   8,
+   20,
+   "QA-1",
+   "E12"
+  ]
+ },
+ "E12-09": {
+  "number": 151,
+  "id": 6459431737,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMbOQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/151",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdns",
+  "fields_set": [
+   3,
+   8,
+   "PL",
+   "E12"
+  ]
+ },
+ "E12-10": {
+  "number": 152,
+  "id": 6459432234,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMdKg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/152",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtdoM",
+  "fields_set": [
+   3,
+   8,
+   "PL",
+   "E12"
+  ]
+ },
+ "E13": {
+  "number": 153,
+  "id": 6459432823,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMfdw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/153",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJteZc",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E13"
+  ]
+ },
+ "E13-01": {
+  "number": 154,
+  "id": 6459433314,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMhYg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/154",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtecM",
+  "fields_set": [
+   null,
+   null,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-01-UI1": {
+  "number": 155,
+  "id": 6459433767,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMjJw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/155",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtedY",
+  "fields_set": [
+   8,
+   20,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-01-UI2": {
+  "number": 156,
+  "id": 6459434236,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMk_A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/156",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJted4",
+  "fields_set": [
+   8,
+   20,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-02": {
+  "number": 157,
+  "id": 6459434720,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMm4A",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/157",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtecs",
+  "fields_set": [
+   3,
+   6,
+   "BE-1",
+   "E13"
+  ]
+ },
+ "E13-03": {
+  "number": 158,
+  "id": 6459435195,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMouw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/158",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtedQ",
+  "fields_set": [
+   null,
+   null,
+   "BE-1",
+   "E13"
+  ]
+ },
+ "E13-03-API": {
+  "number": 159,
+  "id": 6459435678,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMqng",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/159",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtefQ",
+  "fields_set": [
+   8,
+   20,
+   "BE-1",
+   "E13"
+  ]
+ },
+ "E13-03-T": {
+  "number": 160,
+  "id": 6459436190,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMsng",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/160",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtefw",
+  "fields_set": [
+   8,
+   20,
+   "QA-1",
+   "E13"
+  ]
+ },
+ "E13-04": {
+  "number": 161,
+  "id": 6459436643,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMuYw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/161",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtedw",
+  "fields_set": [
+   null,
+   null,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-04-UI1": {
+  "number": 162,
+  "id": 6459437109,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMwNQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/162",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtefE",
+  "fields_set": [
+   3,
+   6,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-04-UI2": {
+  "number": 163,
+  "id": 6459437554,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMx8g",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/163",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtefc",
+  "fields_set": [
+   8,
+   16,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-04-UI3": {
+  "number": 164,
+  "id": 6459438055,
+  "node_id": "I_kwDOVyhtYs8AAAABgQMz5w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/164",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtegE",
+  "fields_set": [
+   8,
+   20,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-04-UI4": {
+  "number": 165,
+  "id": 6459438563,
+  "node_id": "I_kwDOVyhtYs8AAAABgQM14w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/165",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtegk",
+  "fields_set": [
+   5,
+   12,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-04-UI5": {
+  "number": 166,
+  "id": 6459439029,
+  "node_id": "I_kwDOVyhtYs8AAAABgQM3tQ",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/166",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtehM",
+  "fields_set": [
+   8,
+   20,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-05": {
+  "number": 167,
+  "id": 6459439484,
+  "node_id": "I_kwDOVyhtYs8AAAABgQM5fA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/167",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJteeI",
+  "fields_set": [
+   null,
+   null,
+   "BrSE",
+   "E13"
+  ]
+ },
+ "E13-05-UI1": {
+  "number": 168,
+  "id": 6459439976,
+  "node_id": "I_kwDOVyhtYs8AAAABgQM7aA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/168",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtegQ",
+  "fields_set": [
+   5,
+   12,
+   "BrSE",
+   "E13"
+  ]
+ },
+ "E13-05-UI2": {
+  "number": 169,
+  "id": 6459440444,
+  "node_id": "I_kwDOVyhtYs8AAAABgQM9PA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/169",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJteg4",
+  "fields_set": [
+   8,
+   16,
+   "FE-1",
+   "E13"
+  ]
+ },
+ "E13-06": {
+  "number": 170,
+  "id": 6459440939,
+  "node_id": "I_kwDOVyhtYs8AAAABgQM_Kw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/170",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJteek",
+  "fields_set": [
+   2,
+   6,
+   "BrSE",
+   "E13"
+  ]
+ },
+ "E14": {
+  "number": 171,
+  "id": 6459441391,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNA7w",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/171",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfag",
+  "fields_set": [
+   null,
+   null,
+   "PL",
+   "E14"
+  ]
+ },
+ "E14-01": {
+  "number": 172,
+  "id": 6459441820,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNCnA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/172",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfb4",
+  "fields_set": [
+   8,
+   16,
+   "QA-1",
+   "E14"
+  ]
+ },
+ "E14-02": {
+  "number": 173,
+  "id": 6459442314,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNEig",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/173",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfcg",
+  "fields_set": [
+   3,
+   6,
+   "QA-1",
+   "E14"
+  ]
+ },
+ "E14-03": {
+  "number": 174,
+  "id": 6459442758,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNGRg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/174",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfcw",
+  "fields_set": [
+   null,
+   null,
+   "QA-1",
+   "E14"
+  ]
+ },
+ "E14-03-T1": {
+  "number": 175,
+  "id": 6459443371,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNIqw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/175",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfds",
+  "fields_set": [
+   8,
+   16,
+   "QA-1",
+   "E14"
+  ]
+ },
+ "E14-03-T2": {
+  "number": 176,
+  "id": 6459443876,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNKpA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/176",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfeU",
+  "fields_set": [
+   8,
+   16,
+   "QA-1",
+   "E14"
+  ]
+ },
+ "E14-04": {
+  "number": 177,
+  "id": 6459444370,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNMkg",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/177",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfdE",
+  "fields_set": [
+   null,
+   null,
+   "QA-1",
+   "E14"
+  ]
+ },
+ "E14-04-T1": {
+  "number": 178,
+  "id": 6459444943,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNOzw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/178",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfeQ",
+  "fields_set": [
+   8,
+   16,
+   "QA-1",
+   "E14"
+  ]
+ },
+ "E14-04-T2": {
+  "number": 179,
+  "id": 6459445380,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNQhA",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/179",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfec",
+  "fields_set": [
+   8,
+   16,
+   "QA-1",
+   "E14"
+  ]
+ },
+ "E14-04-T3": {
+  "number": 180,
+  "id": 6459445811,
+  "node_id": "I_kwDOVyhtYs8AAAABgQNSMw",
+  "url": "https://github.com/ngochv-3581/productA-lab5-backlog/issues/180",
+  "item_id": "PVTI_lAHODIkQTs4BsHZwzhJtfes",
+  "fields_set": [
+   8,
+   16,
+   "QA-1",
+   "E14"
+  ]
+ },
+ "_project": {
+  "id": "PVT_kwHODIkQTs4BsHZw",
+  "number": 1,
+  "url": "https://github.com/users/ngochv-3581/projects/1"
+ }
+}

@@ -1,0 +1,508 @@
+{
+ "ghi_chu": "SỐ LIỆU GIẢ LẬP phục vụ LAB-5 – không phải tiến độ thật.",
+ "iteration": "Sprint 1",
+ "bat_dau": "2026-11-23",
+ "ket_thuc": "2026-12-06",
+ "ngay_lam_viec": [
+  "2026-11-23",
+  "2026-11-24",
+  "2026-11-25",
+  "2026-11-26",
+  "2026-11-27",
+  "2026-11-30",
+  "2026-12-01",
+  "2026-12-02",
+  "2026-12-03",
+  "2026-12-04"
+ ],
+ "nang_luc": {
+  "gio_moi_ngay": {
+   "BE-1": 6,
+   "BE-2": 6,
+   "FE-1": 6,
+   "QA-1": 4,
+   "BrSE": 2,
+   "PL": 2
+  },
+  "gio_sprint": {
+   "BE-1": 60,
+   "BE-2": 60,
+   "FE-1": 60,
+   "QA-1": 40,
+   "BrSE": 20,
+   "PL": 20
+  },
+  "tong": 260,
+  "muc_tieu": 0.85,
+  "gio_ke_hoach": 208,
+  "ty_le": 0.8,
+  "theo_vai": {
+   "BE-1": {
+    "ke_hoach": 48,
+    "nang_luc": 60
+   },
+   "BE-2": {
+    "ke_hoach": 52,
+    "nang_luc": 60
+   },
+   "FE-1": {
+    "ke_hoach": 44,
+    "nang_luc": 60
+   },
+   "QA-1": {
+    "ke_hoach": 28,
+    "nang_luc": 40
+   },
+   "BrSE": {
+    "ke_hoach": 20,
+    "nang_luc": 20
+   },
+   "PL": {
+    "ke_hoach": 16,
+    "nang_luc": 20
+   }
+  }
+ },
+ "dieu_chinh_nguoi_phu_trach": {
+  "ly_do": "PL cân tải Sprint 1: BE-2 nhận phần chuyển dữ liệu market_id và bảng phân quyền; PL nhận câu hỏi lịch 休市日 vì BrSE đã đủ tải.",
+  "issue": {
+   "E01-04": "BE-1",
+   "E01-07": "BE-1",
+   "E03-02-DB1": "BE-2",
+   "E03-02-DB2": "BE-2",
+   "E03-02-API": "BE-2",
+   "E05-01-DB": "BE-2",
+   "E03-05": "PL"
+  }
+ },
+ "hoan_sang_sprint2": {
+  "E02-04": "Thời hạn lưu audit_logs không chặn go-live; PL và BrSE đã đủ tải → Sprint 2.",
+  "E04-01-DB2": "BE-1 đủ tải; phiên bản v1 làm đầu Sprint 2 → kéo theo E03-03 (営業日 theo chợ).",
+  "E03-03": "Phụ thuộc phiên bản quy tắc v1 (E04-01-DB2) → Sprint 2."
+ },
+ "ke_hoach": {
+  "so_issue": 23,
+  "SWP": 95
+ },
+ "ket_qua": {
+  "SWP_done": 74,
+  "ty_le_done": 0.779,
+  "velocity": 74,
+  "theo_trang_thai": {
+   "Blocked": {
+    "so_issue": 3,
+    "SWP": 7,
+    "gio": 20
+   },
+   "Done": {
+    "so_issue": 17,
+    "SWP": 74,
+    "gio": 158
+   },
+   "In Review": {
+    "so_issue": 1,
+    "SWP": 3,
+    "gio": 8
+   },
+   "In Progress": {
+    "so_issue": 1,
+    "SWP": 8,
+    "gio": 16
+   },
+   "Todo": {
+    "so_issue": 1,
+    "SWP": 3,
+    "gio": 6
+   }
+  }
+ },
+ "su_kien": [
+  {
+   "ngay": 5,
+   "issue": "E03-02-DB2",
+   "loai": "Phát sinh việc",
+   "mo_ta": "Khi chuyển dữ liệu market_id, phát hiện dòng lưu vết đăng nhập cũ không xác định được chợ và dòng test còn sót ngoài phạm vi E01-07 → phải viết thêm bước dọn và điều kiện null cho lưu vết đăng nhập (PREMISE.md P-14).",
+   "anh_huong": "Thực tế khoảng 18 giờ thay vì 10 giờ; E03-02-API bắt đầu trễ 3 ngày, chuyển sang Sprint 2."
+  },
+  {
+   "ngay": 2,
+   "issue": "E12-09, E11-05, E13-06, E06-09, E03-05",
+   "loai": "Khách trả lời chậm",
+   "mo_ta": "Gửi 5 câu hỏi cho khách ngày 2026-11-24. Đến cuối sprint khách trả lời 2/5 (E06-09 ngày 6, E03-05 ngày 8).",
+   "anh_huong": "3 issue làm rõ ở trạng thái Blocked; các issue phụ thuộc (E12-*, E11-06, E13-03…) chưa thể lên kế hoạch chắc chắn."
+  }
+ ],
+ "chuyen_sprint2": [
+  "E03-05",
+  "E03-02-API",
+  "E03-02-T",
+  "E12-09",
+  "E11-05",
+  "E13-06"
+ ],
+ "burndown": {
+  "ngay": [
+   "Bắt đầu",
+   "23/11",
+   "24/11",
+   "25/11",
+   "26/11",
+   "27/11",
+   "30/11",
+   "01/12",
+   "02/12",
+   "03/12",
+   "04/12"
+  ],
+  "ly_tuong": [
+   95.0,
+   85.5,
+   76.0,
+   66.5,
+   57.0,
+   47.5,
+   38.0,
+   28.5,
+   19.0,
+   9.5,
+   0.0
+  ],
+  "thuc_te": [
+   95,
+   95,
+   87,
+   82,
+   77,
+   64,
+   61,
+   53,
+   45,
+   37,
+   21
+  ]
+ },
+ "issues": [
+  {
+   "id": "E12-09",
+   "so": 151,
+   "epic": "E12",
+   "title": "Làm rõ nguồn 請求: ai / khi nào lập 請求, 請求金額 tính từ đâu, 修正依頼 sau khi lập 請求",
+   "vai": "PL",
+   "vai_cu": null,
+   "SWP": 3,
+   "gio": 8,
+   "trang_thai": "Blocked",
+   "ngay_xong": null,
+   "ghi_chu": "Đã gửi câu hỏi nguồn 請求 ngày 2026-11-24, khách chưa trả lời.",
+   "sprint_cuoi": "Sprint 2"
+  },
+  {
+   "id": "E06-09",
+   "so": 84,
+   "epic": "E06",
+   "title": "Làm rõ: thu hồi / đình chỉ giấy; 承認 có bị từ chối không; 承認 ghi như 許可",
+   "vai": "BrSE",
+   "vai_cu": null,
+   "SWP": 3,
+   "gio": 8,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-30",
+   "ghi_chu": "Khách trả lời: chưa cần thu hồi giấy ở go-live; 承認 ghi giống 許可.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E11-05",
+   "so": 133,
+   "epic": "E11",
+   "title": "Làm rõ mẫu CSV phần mềm kế toán và mã ký tự (UTF-8 BOM / Shift_JIS)",
+   "vai": "BrSE",
+   "vai_cu": null,
+   "SWP": 2,
+   "gio": 6,
+   "trang_thai": "Blocked",
+   "ngay_xong": null,
+   "ghi_chu": "Đã xin mẫu CSV kế toán ngày 2026-11-24, khách chưa gửi.",
+   "sprint_cuoi": "Sprint 2"
+  },
+  {
+   "id": "E13-06",
+   "so": 170,
+   "epic": "E13",
+   "title": "Làm rõ thời gian offline tối đa và tablet dùng chung / riêng",
+   "vai": "BrSE",
+   "vai_cu": null,
+   "SWP": 2,
+   "gio": 6,
+   "trang_thai": "Blocked",
+   "ngay_xong": null,
+   "ghi_chu": "Đã hỏi thời gian offline tối đa / tablet dùng chung (Q8) ngày 2026-11-24, chưa có trả lời.",
+   "sprint_cuoi": "Sprint 2"
+  },
+  {
+   "id": "E03-05",
+   "so": 37,
+   "epic": "E03",
+   "title": "Làm rõ lịch 休市日: hạn (支払期限, 有効期限) rơi vào ngày chợ nghỉ; thời điểm được đổi mốc chuyển ngày",
+   "vai": "PL",
+   "vai_cu": "BrSE",
+   "SWP": 3,
+   "gio": 8,
+   "trang_thai": "In Review",
+   "ngay_xong": null,
+   "ghi_chu": "Khách trả lời ngày 8; PL đang ghi quyết định vào PREMISE.md.",
+   "sprint_cuoi": "Sprint 2"
+  },
+  {
+   "id": "E01-01",
+   "so": 2,
+   "epic": "E01",
+   "title": "Dựng codebase hệ thống thật từ prototype LAB-2 + CI (lint, unit, E2E)",
+   "vai": "BE-1",
+   "vai_cu": null,
+   "SWP": 3,
+   "gio": 6,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-24",
+   "ghi_chu": "CI chạy lint + unit + E2E trên PR.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E01-02",
+   "so": 3,
+   "epic": "E01",
+   "title": "Quy trình migration SQL đánh số (AI viết, người dùng tự chạy) + kiểm cấu trúc sau khi chạy",
+   "vai": "BE-1",
+   "vai_cu": null,
+   "SWP": 3,
+   "gio": 6,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-24",
+   "ghi_chu": "Quy trình migration đánh số, có câu kiểm cấu trúc.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E01-03",
+   "so": 4,
+   "epic": "E01",
+   "title": "Môi trường dev / staging / production (Supabase vùng Tokyo, gói trả phí, không SSO)",
+   "vai": "BE-1",
+   "vai_cu": null,
+   "SWP": 3,
+   "gio": 6,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-25",
+   "ghi_chu": "3 môi trường vùng Tokyo.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E01-04",
+   "so": 5,
+   "epic": "E01",
+   "title": "Chuẩn lỗi API {error, code} + logger kỹ thuật theo quy ước DD (category, không ghi bí mật)",
+   "vai": "BE-1",
+   "vai_cu": "BE-2",
+   "SWP": 2,
+   "gio": 4,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-26",
+   "ghi_chu": "Logger + định dạng lỗi dùng chung.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E01-07",
+   "so": 8,
+   "epic": "E01",
+   "title": "Dọn dữ liệu test của prototype trước khi đặt khóa / unique mới",
+   "vai": "BE-1",
+   "vai_cu": "BE-2",
+   "SWP": 1,
+   "gio": 2,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-25",
+   "ghi_chu": "Đã dọn dữ liệu test trong day_closes / payments.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E01-05",
+   "so": 6,
+   "epic": "E01",
+   "title": "Bổ sung từ điển ja.ts: từ mới LAB-4 (申請中 / 審査中 / 不許可 / 届出 / 未送信 …) và message mới",
+   "vai": "FE-1",
+   "vai_cu": null,
+   "SWP": 2,
+   "gio": 4,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-24",
+   "ghi_chu": "Thêm từ mới vào ja.ts.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E02-01",
+   "so": 10,
+   "epic": "E02",
+   "title": "Thu hồi quyền bảng mặc định + trigger chặn update / delete / truncate audit_logs",
+   "vai": "BE-1",
+   "vai_cu": null,
+   "SWP": 3,
+   "gio": 6,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-26",
+   "ghi_chu": "Thu hồi quyền + trigger chặn sửa / xóa lưu vết.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E03-01",
+   "so": 12,
+   "epic": "E03",
+   "title": "Bảng markets + 1 chợ mặc định (go-live 1 chợ)",
+   "vai": "BE-1",
+   "vai_cu": null,
+   "SWP": 1,
+   "gio": 2,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-25",
+   "ghi_chu": "Bảng markets + chợ mặc định.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E03-02-DB1",
+   "so": 27,
+   "epic": "E03",
+   "title": "Migration market_id cho participants, lots, trades + unique (market_id, code / lot_no)",
+   "vai": "BE-2",
+   "vai_cu": "BE-1",
+   "SWP": 5,
+   "gio": 10,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-27",
+   "ghi_chu": "market_id cho participants, lots, trades.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E03-02-DB2",
+   "so": 28,
+   "epic": "E03",
+   "title": "Migration market_id cho day_closes (PK mới), payments, audit_logs",
+   "vai": "BE-2",
+   "vai_cu": "BE-1",
+   "SWP": 5,
+   "gio": 10,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-12-03",
+   "ghi_chu": "Xong muộn 4 ngày do phát sinh việc dọn dữ liệu (sự kiện 1).",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E03-02-API",
+   "so": 29,
+   "epic": "E03",
+   "title": "Sửa truy vấn / API lọc theo chợ của người dùng",
+   "vai": "BE-2",
+   "vai_cu": "BE-1",
+   "SWP": 8,
+   "gio": 16,
+   "trang_thai": "In Progress",
+   "ngay_xong": null,
+   "ghi_chu": "Bắt đầu trễ vì E03-02-DB2 kéo dài; còn khoảng 40%.",
+   "sprint_cuoi": "Sprint 2"
+  },
+  {
+   "id": "E03-02-T",
+   "so": 30,
+   "epic": "E03",
+   "title": "Chạy lại toàn bộ test sau khi thêm market_id",
+   "vai": "QA-1",
+   "vai_cu": null,
+   "SWP": 3,
+   "gio": 6,
+   "trang_thai": "Todo",
+   "ngay_xong": null,
+   "ghi_chu": "Chưa bắt đầu (chờ E03-02-API).",
+   "sprint_cuoi": "Sprint 2"
+  },
+  {
+   "id": "E04-01-DB1",
+   "so": 38,
+   "epic": "E04",
+   "title": "Bảng rule_versions + market_rules + check (approved_by <> drafted_by, miền 料率 / 係数, grace_days = 0) + trigger rule_versions_locked",
+   "vai": "BE-1",
+   "vai_cu": null,
+   "SWP": 8,
+   "gio": 16,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-12-02",
+   "ghi_chu": "Bảng quy tắc + ràng buộc.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E05-01-DB",
+   "so": 50,
+   "epic": "E05",
+   "title": "Migration user_roles, chuyển dữ liệu vai trò hiện có, trigger guard",
+   "vai": "BE-2",
+   "vai_cu": "BE-1",
+   "SWP": 8,
+   "gio": 16,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-12-01",
+   "ghi_chu": "user_roles + trigger guard.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E05-01-T",
+   "so": 51,
+   "epic": "E05",
+   "title": "Test trigger: admin + vai trò nghiệp vụ bị chặn (M_116); tự gán bị chặn",
+   "vai": "QA-1",
+   "vai_cu": null,
+   "SWP": 3,
+   "gio": 6,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-12-03",
+   "ghi_chu": "Test trigger phân quyền.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E14-01",
+   "so": 172,
+   "epic": "E14",
+   "title": "Bộ hồi quy E2E T01–T17 chạy trên CI với cấu trúc database mới",
+   "vai": "QA-1",
+   "vai_cu": null,
+   "SWP": 8,
+   "gio": 16,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-12-04",
+   "ghi_chu": "Bộ hồi quy chạy trên CI; dữ liệu mẫu theo chợ sẽ cập nhật cùng E03-02.",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E13-01-UI1",
+   "so": 155,
+   "epic": "E13",
+   "title": "Spike: Service Worker giữ app chạy khi mất mạng trên Chrome / Safari tablet",
+   "vai": "FE-1",
+   "vai_cu": null,
+   "SWP": 8,
+   "gio": 20,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-11-27",
+   "ghi_chu": "Spike xong; phát hiện giới hạn Safari trên iPad (xem rủi ro).",
+   "sprint_cuoi": "Sprint 1"
+  },
+  {
+   "id": "E13-01-UI2",
+   "so": 156,
+   "epic": "E13",
+   "title": "Spike: hàng đợi IndexedDB + gửi lại có client_uuid",
+   "vai": "FE-1",
+   "vai_cu": null,
+   "SWP": 8,
+   "gio": 20,
+   "trang_thai": "Done",
+   "ngay_xong": "2026-12-04",
+   "ghi_chu": "Hàng đợi IndexedDB + gửi lại chạy trên Chrome; Safari cần cách khác.",
+   "sprint_cuoi": "Sprint 1"
+  }
+ ]
+}

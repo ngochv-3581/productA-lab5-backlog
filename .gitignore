@@ -1,0 +1,9 @@
+# Không đưa file môi trường / tạm lên repo
+.env*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+.venv/
+.backup/
