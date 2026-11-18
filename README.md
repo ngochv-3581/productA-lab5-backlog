@@ -23,7 +23,7 @@
 | Báo cáo SWP (HTML, trong repo) | [reports/swp-report.html](reports/swp-report.html) – tải về rồi mở bằng trình duyệt (tự chứa, không gọi mạng) |
 | Burndown Sprint 1 | [reports/burndown-sprint1.png](reports/burndown-sprint1.png) |
 
-Đã mở thử bằng cửa sổ ẩn danh: [ngày]
+Đã mở thử bằng cửa sổ ẩn danh: 2026-11-18 (repo và GitHub Project, không đăng nhập)
 
 ## 4. Cấu trúc repo
 
